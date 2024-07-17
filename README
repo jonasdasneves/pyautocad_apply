@@ -1,0 +1,35 @@
+Esse é um script para automatizar o preenchimento de um diagrama elétrico unifilar no autoCAD. para tal, fiz um programa que lê a planilha de cargas, em excel, utilizando o pandas, 
+copia um disjuntor previamente posicionado no arquivo o némro especificado e preenche os atributos do mesmo de acordo com a planilha.
+
+Para utilizar o programa é simples!
+
+Após instaladas as bibliotecas, você vai precisar de um arquivoaberto no autoCAD, na aba Model, com o bloco de disjuntor nela (Como no exemplo);
+Preencha a planilha com os circuitos, especificando nome, corrente, numero de polos, etc.
+Execute o arquivo PyDUG.py;
+Ele abrirá uma tela com algumas perguntas;
+Diga quantos disjuntores haverá no quadro;
+Clique com o botão direito no arquivo da planilha e selecione "copiar", assim você vai pegar o endereço asoluto e nome da planilha;
+Cole no "endereço do arquivo";
+Especifique o nome da aba que você está editando dentro da planilha;
+Clique em OK;
+Pronto!
+
+Lembre-se de apagar as linhas ocultas da planilha e de salvar o arquivo antes de executar o programa, para evitar erros.
+
+This is a script to automate filling in a single-line electrical diagram in autoCAD. to do this, I made a program that reads the load spreadsheet in excel using pandas, 
+copies a circuit breaker previously positioned in the file to the specified number and fills in its attributes according to the spreadsheet.
+
+Using the program is simple!
+
+After installing the libraries, you will need a file open in autoCAD, in the Model tab, with the circuit breaker block in it (as in the example);
+Fill in the spreadsheet with the circuits, specifying name, current, number of poles, etc.
+Run the PyDUG.py file;
+It will open a screen with some questions;
+Specify how many circuit breakers are in the panel;
+Right-click on the spreadsheet file and select “copy”, so you get the absolute address and name of the spreadsheet;
+Paste in the “file address”;
+Specify the name of the tab you are editing within the spreadsheet;
+Click OK;
+Done!
+
+Remember to delete the hidden lines from the spreadsheet and save the file before running the program, to avoid errors.
