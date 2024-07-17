@@ -1,4 +1,4 @@
-Esse é um script para automatizar o preenchimento de um diagrama elétrico unifilar no autoCAD. para tal, fiz um programa que lê a planilha de cargas, em excel, utilizando o pandas, 
+Esse é um script para automatizar o preenchimento de um diagrama elétrico unifilar no autoCAD, utilizando o PyAutocad. para tal, fiz um programa que lê a planilha de cargas, em excel, utilizando o pandas, 
 copia um disjuntor previamente posicionado no arquivo o némro especificado e preenche os atributos do mesmo de acordo com a planilha.
 
 Para utilizar o programa é simples!
@@ -16,7 +16,7 @@ Pronto!
 
 Lembre-se de apagar as linhas ocultas da planilha e de salvar o arquivo antes de executar o programa, para evitar erros.
 
-This is a script to automate filling in a single-line electrical diagram in autoCAD. to do this, I made a program that reads the load spreadsheet in excel using pandas, 
+This is a script to automate filling in a single-line electrical diagram in autoCAD, using the PyAutocad library. to do this, I made a program that reads the load spreadsheet in excel using pandas, 
 copies a circuit breaker previously positioned in the file to the specified number and fills in its attributes according to the spreadsheet.
 
 Using the program is simple!
