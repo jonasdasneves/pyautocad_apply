@@ -1,0 +1,7 @@
+Used libraries:
+
+pyAutocad
+win32com.client
+pandas
+PySimpleGUI
+
