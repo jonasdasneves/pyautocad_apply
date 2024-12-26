@@ -67,22 +67,17 @@ def main():
             broda = list2[item]
             circuit = list3[item]
                 
-
-            if broda == 'F+N':
-                Npolos = '1P'
-                polos = 'I'
-
-            elif broda == '2F' or broda == '2F+N':
+            if '2F' in broda:
                 Npolos = '2P'
                 polos = 'II'
 
-            elif broda == '3F' or broda == '3F+N':
+            elif '3F' in broda:
                 Npolos = '3P'
                 polos = 'III'
                 
             else:
-                Npolos = 'KKP'
-                polos = 'XX'
+                Npolos = '1P'
+                polos = 'I'
 
             if len(list) < number+4:
                 if number <= 6:
@@ -197,7 +192,7 @@ def edit1(entity,new,young,current,poles,number):
                             attrib.Update()
                     
 
-def edit2(entity,new,young,current,poles,number,tensao,nome):
+def edit2(entity,tensao,nome):
 
             HasAttributes = entity.HasAttributes
             if HasAttributes:
