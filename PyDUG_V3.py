@@ -67,19 +67,18 @@ def main():
             broda = list2[item]
             circuit = list3[item]
                 
-
-            if 'F+N' in broda:
-                Npolos = '1P'
-                polos = 'I'
-
-            elif '2' in broda:
+            if '2F' in broda:
                 Npolos = '2P'
                 polos = 'II'
 
-            elif '3' in broda:
+            elif '3F' in broda:
                 Npolos = '3P'
                 polos = 'III'
                 
+            elif 'F+N':
+                Npolos = '1P'
+                polos = 'I'
+            
             else:
                 Npolos = 'KKP'
                 polos = 'XX'
@@ -197,7 +196,7 @@ def edit1(entity,new,young,current,poles,number):
                             attrib.Update()
                     
 
-def edit2(entity,new,young,current,poles,number,tensao,nome):
+def edit2(entity,tensao,nome):
 
             HasAttributes = entity.HasAttributes
             if HasAttributes:
@@ -245,7 +244,7 @@ def leitura(circuito,adress,aba,ctag,cname,csupply,ccurrent,cvolt):
             cell = row[values[info]]
             if info == 0 and DB==0:
                 if cell == 220:
-                    cell = '3ɸ-220/127V'
+                    cell =  '3ɸ-220/127V'
 
                 elif cell == 440:
                     cell = '3ɸ-440/380V'
